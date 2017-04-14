@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Example</title>
+           <meta charset="utf-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1">
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+           <link href="css/custom.css" rel="stylesheet">
+		   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+           <script>
+            function myFunction() 
+			{
+             print();
+            }
+           </script>
+		   <script>
+		   $(document).ready(function () {
+           $(document).on("click", ".square-radio", function () {
+           $(this).toggleClass("square-radio--clicked");
+           });
+          });
+		   </script>
+ 
+ 
+    </head>
+    <body>
+        <div class="container">
+	      <div  class="well">
+	           <div class="row">
+				<form>
+					<div class="col-sm-12"><!--class="col-sm-12"  removed from here-->
+						
+						<!--<div class="row">
+						
+						<span><button type="button" class="btn btn-sm btn-info center-block">Clear Form</button>
+						
+						<button type="button" class="btn btn-sm btn-info"  style="float: right;">Clear Form</button></span>
+					
+						</div>-->
+						
+                        <div class="col-xs-9 text-center">
+                            <div class="previous">
+                               <button type="reset" class="btn btn-sm btn-info center-block">
+                                Clear Form
+                                </button>
+		  
+                            </div>
+                        </div>
+                        <div class="col-xs-3  text-right">   
+                            <div class="next">
+                                <button type="button" class="btn btn-sm btn-info" onclick="myFunction()">
+                                    Print
+                                </button>
+                            </div>
+    
+                        </div>
+	                    <br></br>
+	                    <h5 align="center"><strong>Student Information<strong></h5>
+	                    <table class="table table-striped table-bordered table-responsive">
+                         <thead>
+                            <tr>
+                              <th>1.Student Id Number</th>
+                              <th>2.Social Security Number(xxx-xx-xxxx)</th>
+                              <th>3.Date of Birth(mm/dd/yyyy)</th>
+                            </tr>
+                         </thead>
+                         <tbody>
+                          <tr>
+                            <td><div class="form-group">
+                               <input class="form-control"  type="text">
+                               </div>
+							  </td>
+                            <td><div class="form-group">   
+                                <input class="form-control" type="text">
+                                </div>
+							</td>
+                            <td><div class="form-group">
+                                <input class="form-control"  type="text">
+                                </div>
+							</td>
+                          </tr>
+      
+                         </tbody>
+	                     <thead>
+                          <tr>
+		                    <th>
+		                      4.Student's Name 
+		                      <span class="as"> Last </span>
+		                      <span class="as">First</span> 
+		                      <span class="as">MI</span>
+							 </th>
+		                     <th colspan="2">
+		                      5.Other Names Used
+		                     </th>
+		                  </tr>
+		                 </thead>
+		                  <tbody>
+		                   <tr>
+        
+                          <td>
+		                 <span class="input_field_padding"><div class="col-xs-3 col-sm-3 col-lg-3">
+                             <input class="form-control"  type="text">
+                           </div>
+						 </span>
+		                 <span class="input_field_padding"><div class="col-xs-3 col-sm-3 col-lg-3">
+                                <input class="form-control"  type="text">
+                                </div>
+						  </span>
+		                  <span class="input_field_padding"><div class="col-xs-3 col-sm-3 col-lg-3 ">
+                             <input class="form-control"  type="text">
+                             </div>
+						  </span>
+		                  </td>
+		                  <td colspan="2">
+						     <div class="form-group">
+                              <input class="form-control" id="inputdefault" type="text">
+                               </div>
+						     
+						  </td>
+        
+                          </tr>
+		
+		                     <thead>
+      
+                          <tr>
+		                  <th>
+		                 6.Mailing adress 
+		                 <span class="as"> Street </span>
+		                  <span class="as">City</span> 
+		                   <span class="as">state</span>
+		                   <span class="as">zipcode</span></th>
+		                  <th colspan="2">
+		                   7.Other Names Used
+		                 </th>
+		                  </tr>
+		                  </thead>
+						  </tbody>
+		                 <tbody>
+		                 <tr>
+        
+                          <td>
+		                  <span class="input_field_padding"><div class="form-group">
+   
+                             <input class="form-control"  type="text">
+                             </div>
+						  </span>
+		 
+		                   </td>
+		                    <td colspan="2"><span class="input_field_padding"><div class="form-group">
+                              <input class="form-control"  type="text" >
+                               </div></span>
+							</td>
+        
+                           </tr>
+	                     </tbody>
+    
+	
+                        </table>
+						  <h5 align="center"><strong>Verification Processing Information</strong></b></h5>				
+						
+						<table class="table table-striped table-bordered table-responsive">
+                         <thead>
+                            <tr>
+                              <th>8.Number of copies</th>
+                              <th>9.Type of processing</th>
+                              <th>10.Verification to be processed</th>
+                            </tr>
+                         </thead>
+                         <tbody>
+                          <tr>
+                            <td>
+							   <div class="form-group col-sm-4">
+                               <input class="form-control"  type="text" id="txt_border" size="4" maxlength="2">
+                               </div>
+							</td>
+                            <td>
+							 <div class="square-radio square-radio--clicked">
+                              <div class="square-radio--content">
+							  
+							  </div>
+							  
+                             </div>
+							 
+							 <span><i>Regular Processing-$3.00/copy(Approx.5 business days)</i></span><br>
+							  <i>The first two requests for verifications/transcripts are free.</i>
+  
+                             <br>
+
+                             <div class="square-radio">
+                               <div class="square-radio--content"></div>
+                            </div>
+							<i>Emergency processing-$5.00+$3.00/copy(Approx.1 business day))</i><br>
+							
+							</td>
+                            <td>
+							<i><center>(Please check one)</center></i>
+							 <div class="square-radio square-radio--clicked">
+                              <div class="square-radio--content">
+							  
+							  </div>
+							  
+                             </div>
+							 
+							 <i>Picked Up</i><br>
+							  
+  
+                             <br>
+
+                            <div class="square-radio">
+                               <div class="square-radio--content"></div>
+                            </div>
+							<i>Mailed</i><br>
+							
+							</td>
+                          </tr>
+      
+                         </tbody>
+						   <thead>
+						   <tr>
+						     <th>11.Type Of Verification</th>
+							 
+							 
+							 </tr>
+							 </thead>
+							 <tbody>
+							 <tr>
+							 <td>
+	                            <i><p>I am Completing my requirements during the following semester</p></i>
+							   <div class="row">
+							   <div class="col-md-3">
+							   <div class="square-radio">
+                               <div class="square-radio--content"></div>                             							   
+                            </div>Fall					
+							</div>
+							 <div class="col-md-3">
+							  <div class="square-radio">
+                               <div class="square-radio--content"></div>                              							   
+                             </div>Spring
+							 </div>
+							 <div class="col-md-3">
+							<div class="square-radio">
+                               <div class="square-radio--content"></div>                              							   
+                            </div>Summer							
+							</div>
+                             <div class="form-group col-sm-4" >
+                               <input class="form-control"  type="text" id="txt_border" size="4" maxlength="4">
+                               </div>
+							   <br></br>
+							   <div class="col-md-3">
+							<div class="square-radio">
+                               <div class="square-radio--content"></div>                              							   
+                            </div>Enrollments<br>
+							<div class="square-radio">
+                               <div class="square-radio--content"></div>                              							   
+                            </div>GPA
+							<input class="form-control"  type="text" id="txt_areaborder">
+							</div>
+							 </div>							
+							 </td>
+							 </tr>
+						   </tbody>
+						  
+						   
+						     <thead>
+							 <th>
+							 12.Mailing adress for verification(<span>if different from above</span>)
+							 </th>
+							 <tr>
+							 <td>
+							 <
+							 </tr>
+							 </thead>
+						   </table>
+						   
+						   
+						   <!--
+						   <thead >
+						   <tr>
+						   <th>12.Mailing adress for verification(<span>if different from above</span>)</th>
+						   </tr>
+						   </thead>
+						   <tbody>
+						    <tr>
+							 <td>
+							  To:
+							  Name:<input type="textbox" id="txt_border" size="30"> <br>
+							  Institution/co:<input type="textbox" id="txt_border" size="30"><br>
+							  Adress1:<input type="textbox" id="txt_border" ><br>
+							  Adress2:<input type="textbox" id="txt_border" ><br>
+							  <input type="textbox" id="txt_border" ><br>
+							  City:<input type="textbox" id="txt_border" ><br>
+							  State/Country:<input type="textbox" id="txt_border"><br>
+							  Zip/PostalCode:<input type="textbox" id="txt_border" >
+							 </td>
+							</tr>
+						   </tbody>
+						   -->
+						   
+						   
+						   
+						    
+						   
+						   
+	                         <!--<tbody>
+							  <tr>
+							   <td>
+							   <i><p>I am Completing my requirements during the following semester</p></i>
+							   <div class="row">
+							   <div class="col-md-3">
+							   <div class="square-radio">
+                               <div class="square-radio--content"></div>                             							   
+                            </div>Fall					
+							</div>
+							 <div class="col-md-3">
+							  <div class="square-radio">
+                               <div class="square-radio--content"></div>                              							   
+                             </div>Spring
+							 </div>
+							 <div class="col-md-3">
+							<div class="square-radio">
+                               <div class="square-radio--content"></div>                              							   
+                            </div>Summer							
+							</div>
+							
+							
+							<br>
+							</br>
+							 
+							   <div class="form-group col-sm-4" >
+                               <input class="form-control"  type="text" id="txt_border" size="4" maxlength="4">
+                               </div>
+							   <br></br>
+							   <div class="col-md-3">
+							<div class="square-radio">
+                               <div class="square-radio--content"></div>                              							   
+                            </div>Enrollments<br>
+							<div class="square-radio">
+                               <div class="square-radio--content"></div>                              							   
+                            </div>GPA
+							
+							</div>
+							 </div>
+							 <input class="form-control"  type="text" id="txt_areaborder">
+							 
+							
+														
+							
+							
+							   </td>
+							   							 
+                          
+							  </tr>
+							  <thead>
+							    <th>
+								13.Method of Payment
+								</th>
+							  </thead>
+							  <tbody>
+							    <td>
+								
+							         <div class="square-radio">
+                                        <div class="square-radio--content"></div>                              							   
+                                            </div><span>Credit Card(in-person requests only)</span>
+							           <div class="square-radio">
+                                          <div class="square-radio--content"></div>                              							   
+                                      </div>Check
+								<div class="square-radio">
+                                   <div class="square-radio--content"></div>                              							   
+                                    </div>Cash(in-person only)							
+							     
+								
+								</td>
+							  </tbody>
+                             </tbody>-->
+							 
+							  
+							 
+                              
+      
+                          
+    
+	
+                        
+				
+									
+					</div>
+				</form> 
+				</div>
+				
+	       </div>
+	      </div>
+	          </body>
+</html>
